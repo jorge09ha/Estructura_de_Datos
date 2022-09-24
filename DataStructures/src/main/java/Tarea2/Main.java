@@ -1,4 +1,4 @@
-package Semana2;
+package Tarea2;
 
 /**
  *

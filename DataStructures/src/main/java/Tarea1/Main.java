@@ -1,10 +1,10 @@
-package Semana1;
+package Tarea1;
 
 /**
  *
  * @author jorge
  */
-public class Tarea1 {
+public class Main {
 
     /**
      * @param args the command line arguments

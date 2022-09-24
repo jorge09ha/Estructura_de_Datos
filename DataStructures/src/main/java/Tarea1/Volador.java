@@ -1,4 +1,4 @@
-package Semana1;
+package Tarea1;
 
 /**
  *Interface
