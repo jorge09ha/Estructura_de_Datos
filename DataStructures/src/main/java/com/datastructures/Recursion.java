@@ -7,12 +7,12 @@ package com.datastructures;
 public class Recursion {
 
     //static int arr[] = {12, 34, 64, 2, 3, 90};
-
     /**
      * El metodo recursivo debe tener minimo una condicion de Parada/Base, que
-     * nos permite devolver un valor una llamada a si mi
+     * nos permite devolver un valor una llamada a si misma
+     *
      * @param n
-     * @return 
+     * @return
      */
     public static int factorial(int n) {
         if (n == 0) {
@@ -35,13 +35,18 @@ public class Recursion {
     public static int encontrarMax(int[] numeros, int indice, int max) {
         if (indice != numeros.length) {
             if (numeros[indice] > max) {
-                System.out.println("Max: " + max + "\n");
-                System.out.println("Numeros Indice: " + numeros[indice] + "\n");
+                System.out.println("Max: " + max);
+                System.out.println("Indice mayor: " + numeros[indice]);
                 max = encontrarMax(numeros, indice + 1, numeros[indice]);
+                System.out.println("Max: " + max);
             }
         } else {
             max = encontrarMax(numeros, indice + 1, max);
+            System.out.println("Max: " + max);
         }
+
         return max;
     }
+    
+    
 }
