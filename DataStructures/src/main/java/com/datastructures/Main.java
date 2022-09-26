@@ -11,7 +11,7 @@ public class Main {
      */
     public static void main(String[] args) {
         //------------------------------Semana 2 Recursividad--------------------
-        int arr[] = {12, 34, 64, 2, 3};
+        int arr[] = {12, 34, 64, 2, 65};
         //System.out.println(Recursion.factorial(5));
         System.out.println(Recursion.encontrarMax(arr, 1, arr[0]));
 
