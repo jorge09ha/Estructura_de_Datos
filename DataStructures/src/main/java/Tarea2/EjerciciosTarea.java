@@ -21,7 +21,22 @@ public class EjerciciosTarea {
             //System.out.println(a + " " + invertir);
             return invertir;
         }
+    }
 
+    /**
+     * Escriba un programa que imprima recursivamente un String letra por letra.
+     *
+     * @param data
+     * @param indice
+     */
+    public static void ejercicio2(String data, int indice) {
+
+        if (indice != data.length()) {
+            System.out.print(data.charAt(indice)+" ");
+            ejercicio2(data, indice + 1);
+        }else{
+            System.out.println("\n**Fin**");
+        }
     }
 
 }

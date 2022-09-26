@@ -11,13 +11,22 @@ public class Main {
      */
     public static void main(String[] args) {
         //------------------------------Ejercicio 1 --------------------
-
         Integer num = 123;
 
         System.out.println("Ejercicio 1" + "\n" + "Numero Original: " + num);
         System.out.println("Numero Invertido: " + EjerciciosTarea.ejercicio1(num));
 
         //------------------------------Ejercicio 2 --------------------
+        String palabra = "Hola este es el ejercicio 2";
+
+        System.out.println("Ejercicio 2" + "\n" + "Palabra: " + palabra);
+        EjerciciosTarea.ejercicio2(palabra, 0);
+
+        //------------------------------Ejercicio 3 --------------------
+        
+        //------------------------------Ejercicio 4 --------------------
+        
+        //------------------------------Ejercicio 5 --------------------
     }
 
 }
