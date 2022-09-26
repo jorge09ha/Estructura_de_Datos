@@ -8,13 +8,19 @@ public class EjerciciosTarea {
 
     /**
      * Escriba un programa que, utilizando recursividad, permita invertir las
-     * cifras de un número. Muestre el número con sus cifras invertidas.
-     * @param n Numero que se debe de invertir
+     * cifras de un número.Muestre el número con sus cifras invertidas.
+     *
+     * @param a Es el valor de referencia
      * @return
      */
-    public static int ejercicio1(int n) {
-
-        return n;
+    public static String ejercicio1(int a) { //regresa String
+        if (a == 0) {
+            return "";
+        } else {
+            String invertir = (a % 10) + ejercicio1(a / 10);
+            //System.out.println(a + " " + invertir);
+            return invertir;
+        }
 
     }
 
