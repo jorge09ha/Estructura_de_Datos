@@ -119,6 +119,9 @@ public class EjerciciosTarea {
             System.out.println(multiplicando + " x " + multiplicador + " = " + resultado);
             ejercicio5(multiplicando, multiplicador + 1);
         }
+        else{
+            System.out.println("**Fin**\n");
+        }
     }
 
     /**
