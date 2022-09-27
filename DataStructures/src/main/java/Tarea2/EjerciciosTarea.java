@@ -1,5 +1,7 @@
 package Tarea2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jorge.hernandez
@@ -41,10 +43,50 @@ public class EjerciciosTarea {
     }
 
     /**
-     * 3. Escriba un programa que permita llenar un vector recursivamente y de
-     * la misma forma mostrar su contenido y calcular el mayor valor almacenado
+     * 3.Escriba un programa que permita llenar un arr recursivamente y de la
+     * misma forma mostrar su contenido y calcular el mayor valor almacenado
      * también recursivamente.
+     *
+     * @param vector
+     * @param i indice
+     * @return vector ya lleno
      */
+    public static int[] ejercicio3P1(int[] vector, int i) {
+
+        if (i < vector.length) {
+            System.out.print("Numero (" + (i + 1) + " de " + vector.length + ") :");
+            Scanner sc = new Scanner(System.in);
+            int newNum = Integer.parseInt(sc.nextLine());
+            vector[i] = newNum;
+            ejercicio3P1(vector, i + 1);
+        } else {
+            System.out.println("Paso 1 OK");
+        }
+        return vector;
+    }
+
+    public static void ejercicio3P2(int[] vector, int i) {
+        if (i != vector.length) {
+            System.out.print(vector[i] + " ");
+            ejercicio3P2(vector, i + 1);
+        } else {
+            System.out.println("\nPaso 2 OK");
+        }
+    }
+
+    public static int ejercicio3P3(int[] vector, int i, int max) {
+        if (i < vector.length) {
+            if (vector[i] > max) {
+                max = ejercicio3P3(vector, i + 1, vector[i]);
+            } else {
+                max = ejercicio3P3(vector, i + 1, max);
+            }
+        } else {
+            System.out.print("El valor maximo es :");
+        }
+        return max;
+    }
+
     /**
      * 4.Escriba un programa que sume N números recursivamente y muestre el
      * sumatoria.
