@@ -15,9 +15,9 @@ public class Main {
         int x = 10;
         int n = 5;
 
-        System.out.println(serieTaylor.Fact(n));
-        System.out.println(serieTaylor.calcCosI(x, n));
-
+        //System.out.println(Ejercicio1.Fact(n));
+        //System.out.println(Ejercicio1.calcCosI(x, n));
+        System.out.println(Ejercicio1.serieTaylor(x, n, 0, 0));
     }
 
 }
