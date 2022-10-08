@@ -11,7 +11,7 @@ public class Queue<T> {
     private Node<T> tail;
 
     /**
-     * Colas
+     * Enqueue agrega a la cola.
      *
      * @param value
      */
@@ -26,4 +26,39 @@ public class Queue<T> {
         }
     }
 
+    /**
+     * Denqueue saca a la cola.
+     *
+     * @param value
+     */
+    public Node<T> denqueue() {
+        if (head == null) {
+            System.out.println("La cola esta vacia");
+            return null;
+        } else {
+            Node<T> firsInQueue = head;
+            head = head.getNext();
+            return firsInQueue;
+        }
+    }
+
+    public Node<T> findByIndex(int i) {
+        if (head == null) {
+            System.out.println("La cola esta vacia");
+            return null;
+        } else {
+            Node<T> temp = head;
+
+            while (!temp.getNext().equals(null) && i != 0) {
+                temp = temp.getNext();
+                i--;
+            }
+            if (i == 0) {
+                return temp;
+            } else {
+                System.err.println("La cola no tiene " + i + " elementos");
+                return null;
+            }
+        }
+    }
 }
