@@ -12,8 +12,11 @@ public class Ejercicio2 {
     String talla, color, marca, lugar_confeccion, tipo;
 
     public void camisasPrueba() {
-        mipila.push("M", "Roja", "Nike", "USA", "Sport");
-        mipila.push("L", "Verde", "Puma", "China", "Sport");
+        mipila.push("S", "Roja", "Nike", "USA", "Sport");
+        mipila.push("M", "Verde", "Puma", "China", "Polo");
+        mipila.push("XL", "Amarilla", "Addidas", "USA", "Sport");
+        mipila.push("XS", "Blanca", "Puma", "India", "Polo");
+        mipila.push("XL", "Azul", "Nike", "USA", "Sport");
     }
 
     public void mostrarMenu() {
@@ -57,17 +60,11 @@ public class Ejercicio2 {
                 break;
             }
             case 4: {
-                //mipila.mayorDeEdad();
+                mipila.tallaMasRepetida();
                 mostrarMenu();
                 break;
             }
             case 5: {
-                //nombre = sc.nextLine();
-                //mipila.buscarPorNombre(nombre);
-                mostrarMenu();
-                break;
-            }
-            case 6: {
                 System.exit(0);
                 break;
             }

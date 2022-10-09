@@ -33,7 +33,7 @@ public class Queue<T> {
      */
     public Node<T> denqueue() {
         if (head == null) {
-            System.out.println("La cola esta vacia");
+            System.out.println("La cola esta vacia.");
             return null;
         } else {
             Node<T> firsInQueue = head;
@@ -44,7 +44,7 @@ public class Queue<T> {
 
     public Node<T> findByIndex(int i) {
         if (head == null) {
-            System.out.println("La cola esta vacia");
+            System.out.println("La cola esta vacia.");
             return null;
         } else {
             Node<T> temp = head;
@@ -56,7 +56,7 @@ public class Queue<T> {
             if (i == 0) {
                 return temp;
             } else {
-                System.err.println("La cola no tiene " + i + " elementos");
+                System.out.println("La cola no tiene " + i + " elementos.");
                 return null;
             }
         }
