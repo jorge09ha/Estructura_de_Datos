@@ -2,9 +2,9 @@ package Tarea3;
 
 /**
  *
- * @author jorge.hernandez
+ * @author Jorge Hernandez Araya | jorge09ha
  */
-public class Ejercicio1 {
+public class P1 {
 
 //Iterativo ----------------------------------------------------------------------------------------------
     public static double Fact(int num) {

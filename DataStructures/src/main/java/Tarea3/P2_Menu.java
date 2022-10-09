@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 /**
  *
- * @author jorge
+ * @author Jorge Hernandez Araya | jorge09ha
  */
-public class Ejercicio2 {
+public class P2_Menu {
 
-    Pila mipila = new Pila();
+    P2_Funciones mipila = new P2_Funciones();
     String talla, color, marca, lugar_confeccion, tipo;
 
     public void camisasPrueba() {

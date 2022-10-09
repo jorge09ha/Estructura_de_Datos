@@ -1,19 +1,16 @@
 package Tarea3;
 
-import javax.swing.JOptionPane;
-
 /**
  *
- * @author jorge
+ * @author Jorge Hernandez Araya | jorge09ha
  */
-public class Pila {
+public class P2_Funciones {
 
-    private Nodo top;
+    private P2_Nodo top;
 
-    //me permite agregar un objeto a la pila
     public void push(String talla, String color, String marca, String lugar_confeccion, String tipo) {
 
-        Nodo newCamisa = new Nodo(talla, color, marca, lugar_confeccion, tipo);
+        P2_Nodo newCamisa = new P2_Nodo(talla, color, marca, lugar_confeccion, tipo);
         newCamisa.setTalla(talla);
         newCamisa.setColor(color);
         newCamisa.setMarca(marca);
@@ -34,7 +31,7 @@ public class Pila {
 
                 if (newCamisa.getMarca().equalsIgnoreCase("bunny")) {
                     System.out.println("\nLa camisa es Bunny. Se coloda debajo de TOP.");
-                    Nodo tempTop = new Nodo(top.getTalla(), top.getColor(), top.getMarca(), top.getLugar_confeccion(), top.getTipo());
+                    P2_Nodo tempTop = new P2_Nodo(top.getTalla(), top.getColor(), top.getMarca(), top.getLugar_confeccion(), top.getTipo());
                     pop();
                     newCamisa.setNext(top);
                     top = newCamisa;
@@ -50,15 +47,14 @@ public class Pila {
     }
 
     public void pop() {
-        Nodo poppedValue = top;
+        P2_Nodo poppedValue = top;
         if (top != null) {
             top = top.getNext();
         }
     }
 
-    //me permite mostrar todos los datos de la pila
     public void mostrarPila() {
-        Nodo aux = top;
+        P2_Nodo aux = top;
         String cadena = "\nPila de camisas\n";
 
         while (aux != null) {
@@ -73,7 +69,7 @@ public class Pila {
     }
 
     public void tallaMasRepetida() {
-        Nodo aux = top;
+        P2_Nodo aux = top;
         
         int indexMayor = 0;
         String masRepetida = null;

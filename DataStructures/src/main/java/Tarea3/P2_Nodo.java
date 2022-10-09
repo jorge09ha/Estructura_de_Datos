@@ -2,28 +2,21 @@ package Tarea3;
 
 /**
  *
- * @author jorge
+ * @author Jorge Hernandez Araya | jorge09ha
  */
-public class Nodo {
+public class P2_Nodo {
 
-    //atributos
     String talla, color, marca, lugar_confeccion, tipo;
-    Nodo next;
-    Nodo back;
+    P2_Nodo next;
+    P2_Nodo back;
 
-    //String nombre;
-    //int edad;
-    //Nodo siguiente;
-
-    public Nodo(String talla, String color, String marca, String lugar_confeccion, String tipo) {
+    public P2_Nodo(String talla, String color, String marca, String lugar_confeccion, String tipo) {
         this.talla = talla;
         this.color = color;
         this.marca = marca;
         this.lugar_confeccion = lugar_confeccion;
         this.tipo = tipo;
     }
-
-    //metodos get y set
 
     public String getTalla() {
         return talla;
@@ -65,19 +58,19 @@ public class Nodo {
         this.tipo = tipo;
     }
 
-    public Nodo getNext() {
+    public P2_Nodo getNext() {
         return next;
     }
 
-    public void setNext(Nodo next) {
+    public void setNext(P2_Nodo next) {
         this.next = next;
     }
 
-    public Nodo getBack() {
+    public P2_Nodo getBack() {
         return back;
     }
 
-    public void setBack(Nodo back) {
+    public void setBack(P2_Nodo back) {
         this.back = back;
     }
 
