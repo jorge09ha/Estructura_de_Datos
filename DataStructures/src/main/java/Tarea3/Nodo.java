@@ -1,22 +1,29 @@
 package Tarea3;
 
-import java.util.Scanner;
-
 /**
  *
- * @author jorge.hernandez
+ * @author jorge
  */
-public class Camisa {
+public class Nodo {
 
-    protected String talla, color, marca, lugar_confeccion, tipo;
+    //atributos
+    String talla, color, marca, lugar_confeccion, tipo;
+    Nodo next;
+    Nodo back;
 
-    public Camisa(String talla, String color, String marca, String lugar_confeccion, String tipo) {
+    //String nombre;
+    //int edad;
+    //Nodo siguiente;
+
+    public Nodo(String talla, String color, String marca, String lugar_confeccion, String tipo) {
         this.talla = talla;
         this.color = color;
         this.marca = marca;
         this.lugar_confeccion = lugar_confeccion;
         this.tipo = tipo;
     }
+
+    //metodos get y set
 
     public String getTalla() {
         return talla;
@@ -58,4 +65,21 @@ public class Camisa {
         this.tipo = tipo;
     }
 
+    public Nodo getNext() {
+        return next;
+    }
+
+    public void setNext(Nodo next) {
+        this.next = next;
+    }
+
+    public Nodo getBack() {
+        return back;
+    }
+
+    public void setBack(Nodo back) {
+        this.back = back;
+    }
+
+    
 }

@@ -35,6 +35,7 @@ public class Ejercicio1 {
     public static double serieTaylor(int x, int n, int i, double result) {
         if (i < n) {
             result += (Math.pow(-1, n) / factorial(2 * n)) * Math.pow(x, 2 * n);
+            System.out.println(i+" "+result);
             result = serieTaylor(x, n, i + 1, result);
         } 
         return result;

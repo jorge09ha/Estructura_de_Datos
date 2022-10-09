@@ -25,6 +25,7 @@ public class Stack<T> {
             newNode.setNext(top);
             top = newNode;
         }
+        
     }
 
     /**
@@ -55,7 +56,7 @@ public class Stack<T> {
         if (top == null) {
             return false;
         }
-
+        
         while (existe != true && top != null) {
             if (x == top.getValue()) {
                 existe = true;

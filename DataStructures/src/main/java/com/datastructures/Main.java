@@ -30,7 +30,7 @@ public class Main {
 //        int x = Integer.parseInt(sc.nextLine());
 //        boolean encontrado = false;
 //
-//        Stack<Integer> Pila1 = new Stack<>();
+//        Stack<Integer> Pila1 = new Stack<>();// [17,20,3,4]
 //        Pila1.push(17);
 //        Pila1.push(20);
 //        Pila1.push(3);
@@ -42,6 +42,7 @@ public class Main {
 //        Cola.enqueue(1);
 //        Cola.enqueue(6);
 //        Cola.enqueue(4);
+//        
 //        System.out.println(Cola.denqueue());
 //        System.out.println(Cola.denqueue().getValue());
         //------------------------------Semana 4 Ejemplo en clase----------------
@@ -61,7 +62,7 @@ public class Main {
         prueba2.enqueue(temp);
 
         //Lleno la cola a partir del nuevo head
-        for (int i = temp; i <= 100; i++) {
+        for (int i = temp; i <= 101; i++) {
             prueba2.enqueue(i);
         }
         //Busco el segundo elemeto de la cola
