@@ -11,10 +11,14 @@ public class P3_Nodo {
     P3_Nodo next;
     P3_Nodo back;
 
-    public P3_Nodo(String sector, int cedula, int hora) {
+    public P3_Nodo() {
+    }
+
+    public P3_Nodo(String sector, int hora, int cedula) {
         this.sector = sector;
-        this.cedula = cedula;
         this.hora = hora;
+        this.cedula = cedula;
+
     }
 
     public String getSector() {

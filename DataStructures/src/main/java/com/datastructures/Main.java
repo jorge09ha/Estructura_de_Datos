@@ -44,7 +44,7 @@ public class Main {
 //        Cola.enqueue(4);
 //        
 //        System.out.println(Cola.denqueue());
-//        System.out.println(Cola.denqueue().getValue());
+//        System.out.println(Cola.denqueue().getValueP
         //------------------------------Semana 4 Ejemplo en clase----------------
 
         //LLenar una cola con 100 int
