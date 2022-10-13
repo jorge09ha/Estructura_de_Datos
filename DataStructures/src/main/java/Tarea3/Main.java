@@ -9,6 +9,11 @@ package Tarea3;
  * P2_Nodo = Es el nodo de camisas del ejercicio #2. P2_Funciones = Es la pila
  * de camisas y la funcion buscar la que se repite mas del ejercicio #2.
  *
+ * P3_Cola = Es el nodo de camisas del ejercicio #3. P3_Nodo = Tiene una metodo
+ * para encolar a las personas del ejercicio #3. Y imprime el orden de
+ * prioridad,
+ *
+ *
  * @author Jorge Hernandez Araya | jorge09ha
  */
 public class Main {
@@ -41,7 +46,7 @@ public class Main {
         colaD.enqueue("Sol", 15, 3333);
         colaD.enqueue("Sol", 15, 2118);
         colaD.enqueue("Palco", 12, 1111);
-        
+
         colaD.colaOriginal();
         colaD.ordenar();
 
