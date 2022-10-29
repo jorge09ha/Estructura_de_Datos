@@ -47,27 +47,49 @@ public class Main {
 //        System.out.println(Cola.denqueue().getValueP
         //------------------------------Semana 4 Ejemplo en clase----------------
 
-        //LLenar una cola con 100 int
-        Queue<Integer> prueba = new Queue<>();
-        for (int i = 0; i < 101; i++) {
-            prueba.enqueue(i);
-        }
-
-        //Nuevo Head para la nueva cola
-        int temp = prueba.findByIndex(28).getValue();
-        System.out.println(temp);
-
-        //Nueva cola
-        Queue<Integer> prueba2 = new Queue<>();
-        prueba2.enqueue(temp);
-
-        //Lleno la cola a partir del nuevo head
-        for (int i = temp; i <= 101; i++) {
-            prueba2.enqueue(i);
-        }
-        //Busco el segundo elemeto de la cola
-        temp = prueba2.findByIndex(2).getValue();
-        System.out.println(temp);
+//        //LLenar una cola con 100 int
+//        Queue<Integer> prueba = new Queue<>();
+//        for (int i = 0; i < 101; i++) {
+//            prueba.enqueue(i);
+//        }
+//
+//        //Nuevo Head para la nueva cola
+//        int temp = prueba.findByIndex(28).getValue();
+//        System.out.println(temp);
+//
+//        //Nueva cola
+//        Queue<Integer> prueba2 = new Queue<>();
+//        prueba2.enqueue(temp);
+//
+//        //Lleno la cola a partir del nuevo head
+//        for (int i = temp; i <= 101; i++) {
+//            prueba2.enqueue(i);
+//        }
+//        //Busco el segundo elemeto de la cola
+//        temp = prueba2.findByIndex(2).getValue();
+//        System.out.println(temp);
+        //------------------------------Semana 7 Listas----------------
+//        List Lista = new List();
+//        Lista.insertar(new Persona(1, "P"));
+//        Lista.insertar(new Persona(7, "P"));
+//        Lista.insertar(new Persona(45, "P"));
+//        Lista.insertar(new Persona(4, "P"));
+//        Lista.printList();
+//        System.out.println("\nElimino al 8");
+//        Lista.eliminar(8);
+//        System.out.println("\nElimino al 7");
+//        Lista.eliminar(7);
+//        System.out.println("\nElimino al 7");
+//        Lista.eliminar(7);
+//        System.out.println("");
+//        Lista.printList();
+        //------------------------------Semana 7 Listas simple circular----------------
+        ListCircular ListaC = new ListCircular();
+        ListaC.insertar(new Persona(1, "A"));
+        ListaC.insertar(new Persona(2, "B"));
+        ListaC.insertar(new Persona(4, "D"));
+        ListaC.insertar(new Persona(3, "C"));
+        ListaC.printList();
 
     }
 }
