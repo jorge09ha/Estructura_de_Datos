@@ -84,12 +84,41 @@ public class Main {
 //        System.out.println("");
 //        Lista.printList();
         //------------------------------Semana 7 Listas simple circular----------------
-        ListCircular ListaC = new ListCircular();
-        ListaC.insertar(new Persona(1, "A"));
-        ListaC.insertar(new Persona(2, "B"));
-        ListaC.insertar(new Persona(4, "D"));
-        ListaC.insertar(new Persona(3, "C"));
-        ListaC.printList();
+//        ListCircular ListaC = new ListCircular();
+//        ListaC.insertar(new Persona(1, "A"));
+//        ListaC.insertar(new Persona(2, "B"));
+//        ListaC.insertar(new Persona(4, "D"));
+//        ListaC.insertar(new Persona(3, "C"));
+//        ListaC.printList();
+        //------------------------------Semana 9 Listas doble circular----------------
+//        ListaDobleCircular ListaDC = new ListaDobleCircular();
+//        ListaDC.insertar(new Persona(1, "Roberto"));
+//        ListaDC.insertar(new Persona(2, "Jorge"));
+//        ListaDC.insertar(new Persona(4, "Julian"));
+//        ListaDC.insertar(new Persona(3, "Axel"));
+//        ListaDC.printList();
+//
+//        //Existe
+//        int id1 = 4;
+//        System.out.println("\nExiste el id " + id1 + ": " + ListaDC.existe(id1));
+//
+//        //Modifica
+//        Persona p = new Persona(2, "Andres");
+//        ListaDC.modifica(p);
+//        System.out.println("\n");
+//        ListaDC.printList();
+//        
+//        //Elimina
+//        int id2 = 2;
+//        ListaDC.elimina(id2);
+//        System.out.println("\n");
+//        ListaDC.printList();
+//        
+//        //Extrae
+//        int id3 = 2;
+//        Persona persona = new Persona();
+//        persona = ListaDC.extrae(id3);
+//        System.out.println(persona.toString());
 
     }
 }
