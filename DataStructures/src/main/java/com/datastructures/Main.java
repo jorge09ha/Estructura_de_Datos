@@ -119,6 +119,21 @@ public class Main {
 //        Persona persona = new Persona();
 //        persona = ListaDC.extrae(id3);
 //        System.out.println(persona.toString());
-
+        //------------------------------Semana 11 Arbol binario----------------
+        ArbolBinario arbolBinario = new ArbolBinario();
+        arbolBinario.inserta(50);
+        arbolBinario.inserta(20);
+        arbolBinario.inserta(80);
+        arbolBinario.inserta(15);
+        arbolBinario.inserta(30);
+        arbolBinario.inserta(60);
+        arbolBinario.inserta(40);
+        arbolBinario.inserta(90);
+        arbolBinario.inserta(75);
+        arbolBinario.inserta(33);
+        arbolBinario.inserta(82);
+        arbolBinario.inOrden();
+        System.out.println("\n");
+        arbolBinario.getAltura();
     }
 }
